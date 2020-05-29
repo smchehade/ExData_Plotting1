@@ -8,3 +8,6 @@ plot2 <- function(){
       plot(Global_active_power~Time,type = "l",pch =19,cex=0.3, xlab="",ylab = "Global Active Power (Kilowatts)")
  )
 }
+
+dev.copy(png, file="plot2.png", height=480, width=480)
+dev.off()
